@@ -1,0 +1,528 @@
+.App {
+  background-color: #171a24;
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/musicify-3a482.appspot.com/o/assets%2FBackground.png?alt=media&token=0a8ee86f-6ed3-4e8b-8e10-2af33e230e6e");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  /* width: 100%; */
+}
+
+.navbarBrandLogo {
+  height: 35px;
+  cursor: pointer;
+}
+
+.landing-page-girl-col img {
+  height: 90vh;
+}
+.logoContainer {
+  display: flex;
+  padding:0;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.logoContDiv {
+  width: 100%;
+  height: 100%;
+}
+
+.logoContainer img {
+  width: 400px;
+  margin-left: -20px;
+}
+.logoContainer p {
+  font-family: monospace;
+  color: white;
+  margin-top: -10px;
+  font-size: 20px;
+}
+.alink {
+  cursor: pointer;
+}
+
+.nav-item-discover {
+  margin-right: 40px;
+}
+
+/*css for form*/
+.loginForm {
+  padding: 0px 30px 30px 30px;
+  background-color: #2a2e35;
+  color: white;
+  border-radius: 5px;
+  width: 40%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginFormH2 {
+  text-align: center;
+  margin-top: 0px;
+  font-size: 35px;
+}
+
+.inputInDiv {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.txtInput {
+  font-family: inherit;
+  width: 90%;
+  height: 25px;
+  margin: 10px 0px;
+  padding-right: 10px;
+  font-size: 1.1rem;
+  color: white;
+  background-color: rgba(255, 255, 255, 0);
+  border: 0px;
+  border-bottom: 2px solid #7d2dc9;
+  transition: 0.5s;
+  text-align: right;
+}
+
+.txtInput:focus {
+  border-bottom: 2px solid #11998e;
+  outline: none;
+}
+
+.txtInput:focus :placeholder-shown {
+  display: none;
+}
+
+.btnLogin {
+  color: white;
+  width: 80%;
+  height: 40px;
+  margin-top: 20px;
+  font-family: inherit;
+  font-size: 1rem;
+  background-color: #8d26ed;
+  border: 0;
+  float: right;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.btnLogin:hover {
+  background-color: #11998e;
+}
+
+.forgotlink {
+  width: 100%;
+  font-size: 10px;
+  text-decoration: none;
+  margin-top: -5px;
+  padding-right: 30px;
+  color: white;
+  text-align: right;
+}
+.forgotlink:hover {
+  text-decoration: underline;
+}
+
+.haveacclbl {
+  font-size: 15px;
+  margin: 10px;
+  color: white;
+  margin-bottom: -30px;
+}
+
+.reglink {
+  color: #11998e;
+}
+.musicUploaderHolder {
+  height: 90vh;
+}
+
+.musicImg {
+  opacity: 100%;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.uploadImg {
+  opacity: 100%;
+  position: absolute;
+  transition: 1s;
+  transform: scale(0.95);
+  cursor: pointer;
+}
+
+.uploadingImg {
+  animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  25% {
+    transform: rotate(40deg);
+  }
+  50% {
+    transform: rotate(-40deg);
+  }
+}
+
+.uploadedImg {
+  opacity: 100%;
+  position: absolute;
+  transition: 1s;
+  transform: scale(0.5);
+  cursor: pointer;
+  z-index: 2;
+ margin-top: 5px;
+}
+
+.uploadAudioHolder:hover .uploadImg {
+  transform: scale(1.1);
+  opacity: 100%;
+}
+.plyr {
+  margin-top: 10px;
+  width: 80%;
+}
+
+.hidden {
+  display: none;
+}
+
+/* for AudoList */
+.item-container {
+  margin: 20px;
+  background-color: black;
+}
+
+.audio-library-list-item {
+  height: 50px;
+  border-radius: 5px;
+  background-color: #252938;
+}
+
+.list-item-album-art {
+  height: 100%;
+}
+
+/* for common uses */
+.dis-flex {
+  display: flex;
+  align-items: center;
+}
+.jc-center {
+  justify-content: center;
+}
+.fd-row {
+  flex-direction: row;
+}
+.fd-col {
+  flex-direction: column;
+}
+.h-90vh {
+  height: 90vh;
+}
+
+
+
+
+
+/* for player page  */
+
+.player-holder {
+  transition: 0.5s;
+  width: 40%;
+}
+.audio-player {
+  width: 100%;
+  height: 100%;
+}
+.audio-player img {
+  display: block;
+  transition: 1s;
+}
+
+.playlist-holder {
+  width: 60%;
+}
+
+.playlist-item {
+  width: 85%;
+  max-width: 500px;
+  height: 50px;
+  margin: 10px 100px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.album-art-holder {
+  width: 8%;
+  cursor: pointer;
+}
+
+
+.bg-l-pink {
+  background-color:#8e89ce;
+}
+
+.selected-item {
+  background-color: #7635a1;
+  color: white;
+}
+
+.playlist-item-title {
+  margin-left: 5px;
+  width: 90%;
+  cursor: pointer;
+}
+.audio-options {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+
+
+.playlist-item-title span {
+  /* position:absolute; */
+    /* padding-left:10px;
+    text-align:left;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 150px;
+    text-overflow: ellipsis; */
+}
+/* .playlist-item-duration {
+  width: 13%;
+  display: none;
+} */
+
+
+
+/* spinner css */
+.loader {
+  color: #8e89ce;
+  font-size: 90px;
+  text-indent: -9999em;
+  overflow: hidden;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  margin: 72px auto;
+  position: relative;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: load6 1.7s infinite ease, round 1.7s infinite ease;
+  animation: load6 1.7s infinite ease, round 1.7s infinite ease;
+}
+@-webkit-keyframes load6 {
+  0% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+  5%,
+  95% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+  10%,
+  59% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+  }
+  20% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
+  }
+  38% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
+  }
+  100% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+}
+@keyframes load6 {
+  0% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+  5%,
+  95% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+  10%,
+  59% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+  }
+  20% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
+  }
+  38% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
+  }
+  100% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+}
+@-webkit-keyframes round {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes round {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+
+
+/* Delete page css */
+.deleteContainer {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+  .logoContainer {
+    display: block;
+  align-items: unset;
+  justify-content:unset;
+  flex-direction: column;
+  }
+  .logoContDiv {
+    padding-left: 20px;
+  }
+
+  .homepageContainer {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+  .homepageContainer img {
+    width: 100%;
+  height: 60vh;
+  }
+
+  .landing-page-girl-col {
+    /* display: none; */
+    widows: 100%;
+  }
+
+  .logoContainer {
+    padding-top: 20vh;
+  }
+
+  .logoContainer img {
+    display: none;
+    /* width: 350px; */
+    width: 300px;
+    height: auto;
+    /* margin-left: -20px; */
+  }
+
+  .loginForm {
+    width: 100%;
+  }
+
+  .musicUploaderHolder {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .myContainer{
+    /* flex-direction: column-reverse; */
+    height: 90vh;
+    display: block;
+  }
+  .player-holder {
+    transition: 0.5s;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   max-height: 10vh;
+
+   /* max-height: 60vh; */
+   background-color: #564698;
+   color: white;
+   text-align: center;
+  }
+
+  /* .player-holder img {
+    display: none;
+  } */
+
+
+
+  .expand-player-holder {
+    transition: 0.5s;
+   max-height: 60vh;
+   
+  }
+  .player-holder-img-none .audio-player img {
+    transition: 0.5s;
+    display: none;
+  }
+
+  
+  .playlist-holder {
+    transition: 0.5s;
+    width: 100%;
+    height: 60vh;
+  }
+  .playlist-item {
+    margin: 5px 0px;
+    width: 100%;
+  }
+  .playlist-item-title {
+    margin-left: 5px;
+  }
+}
+
+
+
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #3f3a3a; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #575255; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(141, 137, 137); 
+}
